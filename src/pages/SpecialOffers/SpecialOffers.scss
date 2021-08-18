@@ -1,0 +1,223 @@
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// Обнуление
+@import "normal.scss";
+
+//Переменные
+$color_2: #2f3a29;
+$color_3: #4e2121;
+$color_4: #313131;
+$color_5: #fff;
+$color_6: #21444e;
+
+//Шаблоны
+%dispFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    color: $color_4;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    %h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    %h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+      %h2 {
+          margin-bottom: 20px;
+      }
+  }
+
+%darkLinkArrow {
+    background-color: $color_2;
+    color: $color_5;
+    font-size: 14px;
+    padding: 12px 60px 12px 30px;
+    position: relative;
+    transition: all 0.3s ease-in;
+    border-radius: 3px;
+  
+    &::after {
+        content: url('../../images/whitearrow.svg');
+        position: absolute;
+        top: 11px;
+        right: 25px;
+    }
+  
+    &:hover {
+        background-color: $color_6;
+    }
+}
+
+%sectionPadding {
+    padding: 70px 0;
+}
+
+@media (max-width: 992px) {
+    %sectionPadding {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    %sectionPadding {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    %sectionPadding {
+        padding: 30px 0;
+    }
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 70px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.special-goods__section {
+    @extend %sectionPadding;
+    border-bottom: 1px solid $color_4;
+
+    .special-goods__content {
+      display: flex;
+      flex-direction: column;
+
+        h2 {
+            @extend %h2;
+        }
+
+        .special-goods__list {
+            @extend %dispFlex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin-bottom: 30px;
+
+            .special-goods__item {
+                width: 330px;
+                margin: 20px;
+                padding: 0 15px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 5px -5px 10px $color_4;
+                }
+
+                .special-good_image_container {
+                    width: 300px;
+                    height: 250px;
+
+                    .special-good__image {
+                        width: 300px;
+                        height: 250px;
+                        overflow: hidden;
+                    }
+                }
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+
+                .special-good__new-price {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: $color_3;
+                }
+
+                .special-good__description {
+                    margin-bottom: 20px;
+
+                    .special-good__old-price {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+
+        >a {
+            @extend %darkLinkArrow;
+            align-self: center;
+        }
+    }
+}
+
+.promocodes__section {
+    @extend %sectionPadding;
+
+    h2 {
+        @extend %h2;
+    }
+
+    .promocodes__list {
+        @extend %dispFlex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .promocode__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 400px;
+            height: 200px;
+            border-radius: 5px;
+            box-shadow: 5px -5px 10px $color_4;
+            padding: 20px;
+            margin: 20px;
+
+            .promocode {
+                align-self: center;
+                color: $color_6;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,313 @@
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// Обнуление
+@import "normal.scss";
+
+//Переменные
+$color_2: #2f3a29;
+$color_3: #4e2121;
+$color_4: #313131;
+$color_5: #fff;
+$color_6: #21444e;
+
+//Шаблоны
+%dispFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    color: $color_4;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    %h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    %h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+      %h2 {
+          margin-bottom: 20px;
+      }
+  }
+
+%darkLink {
+    background-color: $color_2;
+    color: $color_5;
+    font-size: 14px;
+    padding: 12px 30px 12px 30px;
+    width: 100%;
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+  
+    &:hover {
+        background-color: $color_6;
+    }
+}
+
+%sectionPadding {
+    padding: 70px 0;
+}
+
+@media (max-width: 992px) {
+    %sectionPadding {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    %sectionPadding {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    %sectionPadding {
+        padding: 30px 0;
+    }
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 70px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.catalog__section {
+    @extend %sectionPadding;
+
+    h2 {
+        @extend %h2;
+    }
+
+    .filter__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .filter__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            .filter__item {
+                @extend %dispFlex;
+                flex-direction: column;
+                padding: 10px;
+                width: 160px;
+                height: 110px;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:last-child {
+                    .filter_img {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $color_3;
+                        border-radius: 50%;
+                        opacity: 0.5;
+                    }
+                }
+        
+                .filter_img {
+                    height: 70px;
+                }
+
+                p {
+                    font-size: 14px
+                }
+
+                &.active {
+                    outline: 2px solid $color_2
+                }
+
+                &:hover {
+                    box-shadow: 5px -5px 10px $color_2;
+                }
+            }
+        }
+    }
+
+    .catalog__list {
+        @extend %dispFlex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        .catalog__item {
+            display: block;
+            width: 330px;
+            margin: 20px;
+            padding: 0 15px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 5px -5px 10px $color_4;
+            }
+
+            &.hide {
+              display: none;
+            }
+
+            .good_image_container {
+                width: 300px;
+                height: 250px;
+
+                .good__image {
+                    width: 300px;
+                    height: 250px;
+                    overflow: hidden;
+                }
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 40px;
+            }
+
+            .good__description {
+                margin-bottom: 20px;
+
+                .good__price {
+                    font-size: 22px;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+            }
+
+            button {
+                @extend %darkLink;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .catalog__section {
+        .catalog__list {
+            .catalog__item {
+                width: 270px;
+    
+                .good_image_container {
+                    width: 240px;
+                    height: 200px;
+    
+                    .good__image {
+                        width: 240px;
+                        height: 200px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .catalog__section {
+        .catalog__list {
+            .catalog__item {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .catalog__section {
+        .filter__body {
+            margin: 0 auto;
+            width: 500px;
+       
+            .filter__list {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .catalog__section {
+        .filter__body {
+            width: 300px;
+
+            .filter__list {
+                .filter__item {
+                    width: auto;
+                    height: auto;
+                    padding: 15px;
+                    border-radius: 3px;
+            
+                    .filter_img {
+                        display: none;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .catalog__list {
+            .catalog__item {
+                width: 300px;
+    
+                .good_image_container {
+                    width: 270px;
+                    height: 225px;
+    
+                    .good__image {
+                        width: 270px;
+                        height: 225px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

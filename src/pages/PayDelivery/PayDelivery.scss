@@ -1,0 +1,330 @@
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// Обнуление
+@import "normal.scss";
+
+//Переменные
+$color_4: #313131;
+
+//Шаблоны
+%dispFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    color: $color_4;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    %h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    %h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    %h2 {
+        margin-bottom: 20px;
+    }
+  }
+
+%sectionPadding {
+    padding: 70px 0;
+}
+
+@media (max-width: 992px) {
+    %sectionPadding {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    %sectionPadding {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    %sectionPadding {
+        padding: 30px 0;
+    }
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 70px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.pay__section {
+    @extend %sectionPadding;
+    border-bottom: 1px solid $color_4;
+
+    .pay__content {
+        h2 {
+            @extend %h2;
+        }
+
+        .pay__text {
+            p:first-child {
+                font-weight: 600;
+                font-size: 18px;
+                font-style: italic;
+            }
+
+            .pay__list {
+                @extend %dispFlex;
+                padding-top: 40px;
+                justify-content: space-evenly;
+                align-items: stretch;
+
+                .pay__item {
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-style: italic;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .pay__section {
+        .pay__content {
+            .pay__text {
+                .pay__list {
+                    .pay__item {
+                        width: 180px;
+                      
+                        img {
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .pay__section {
+        .pay__content {
+            .pay__text {
+                .pay__list {
+                    flex-wrap: wrap;
+                    justify-content: center;
+        
+                    .pay__item {
+                        width: 200px;
+                        margin: 15px;
+          
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .pay__section {
+        .pay__content {
+            .pay__text {
+                .pay__list {
+                    .pay__item {
+                        width: 140px;
+                        margin: 10px;
+        
+                        img {
+                            width: 140px;
+                            height: 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.delivery__section {
+    @extend %sectionPadding;
+
+    .delivery__content {
+        h2 {
+            @extend %h2;
+        }
+
+        .delivery__text {
+            >p {
+                margin-bottom: 20px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 18px;
+                font-style: italic;
+            }
+
+            .delivery__list {
+                .delivery__item {
+                    @extend %dispFlex;
+                    justify-content: flex-start;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0; 
+                    }
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin-right: 50px;
+                    }
+
+                    .item__text {
+                        h3 {
+                            font-weight: 600;
+                            font-size: 18px;
+                            margin-bottom: 20px; 
+                        }
+
+                        p {
+                            margin-bottom: 10px;
+                        }
+
+                        ul {
+                            li {
+                                list-style: disc;
+                                margin-left: 40px;
+                            }
+                        }
+
+                        span {
+                            font-weight: 600;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .delivery__section {
+        .delivery__content {
+            .delivery__text {
+                .delivery__list {
+                    .delivery__item {
+                        img {
+                            width: 180px;
+                            height: 180px;
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery__section {
+        .delivery__content {
+            .delivery__text {
+               .delivery__list {
+                    .delivery__item {
+                        flex-direction: column;
+                        max-width: 550px;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                      
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
+            
+                        .item__text {
+                            ul {
+                                li {
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .delivery__section {
+        .delivery__content {
+            .delivery__text {
+                .delivery__list {
+                    .delivery__item {
+                        margin-bottom: 20px;
+            
+                        img {
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// Обнуление
+@import "normal.scss";
+
+//Переменные
+
+$color_2: #2f3a29;
+$color_5: #fff;
+
+.modal__item {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in;
+    z-index: 5;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal_item__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+
+        .item__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $color_5;
+            width: 500px;
+            height: 450px;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+
+            .good__info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                img {
+                    align-self: center;
+                    width: 360px;
+                    height: 300px;
+                    margin-bottom: 20px; 
+                }
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+    
+                .good__description {
+                    .good__price {
+                        font-size: 22px;
+                        font-weight: 600;
+                        font-style: italic;
+                        text-decoration: underline
+                    }
+                }
+            }
+
+            .modal_item__close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: all 0.3s ease-in;
+
+                &::before, &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 5%;
+                    background-color: $color_2;
+                }
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    transform: translateY(19px) rotate(45deg);
+                }
+
+                &::after {
+                    bottom: 0;
+                    left: 0;
+                    transform: translateY(-19px) rotate(-45deg);
+                }
+
+                &:hover {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .modal__item {
+        .modal_item__body {
+            .item__content {
+                width: 300px;
+                height: 420px;
+                padding: 10px;
+
+                .good__info {
+                    img {
+                        width: 288px;
+                        height: 260px; 
+                    }
+                }
+            }
+        }
+    }
+}

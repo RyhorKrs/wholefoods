@@ -1,0 +1,468 @@
+{
+  "reviews": [
+    {
+      "id": 0,
+      "reviewUserName": "Валерий",
+      "reviewDate": "25.05.2021",
+      "reviewText": "Я заказываю продукты, сидя на работе. Зато дома не трачу время на это) и бегать по магазинам уже не нужно. Привозят обычно за пару часов, дольше не бывает. Как раз успеваю приехать домой и все получить. Свежая вкусная еда, обычная. Нет ничего особенного. И цены тут как везде."
+    },
+    {
+      "id": 1,
+      "reviewUserName": "Иван",
+      "reviewDate": "05.06.2021",
+      "reviewText": "Продукты питания с интернета заказывали чисто по причине экономии времени. Ведь цены почти такие же, как и везде. Оплачивали покупку, только когда все получили. Советую вам этот магазин! Вы лучшие! Честные! В остальных сервисах доставки такой организованности нет."
+    },
+    {
+      "id": 2,
+      "reviewUserName": "Екатерина",
+      "reviewDate": "10.06.2021",
+      "reviewText": "Давно пользуюсь магазином и заказываю разные продукты к столу, про простые магазины уже и перестала думать, потому что тут заказывать оказалось куда удобнее. Есть выбор."
+    },
+    {
+      "id": 3,
+      "reviewUserName": "Виктор",
+      "reviewDate": "15.06.2021",
+      "reviewText": "Доставляются продукты питания в пакетах. Если нужно и по 10 пакетам все раскидают, лишь бы товары были свободно размещены внутри, и соблюдалось товарное соседство. По телефону мы собрали заказ и все согласовали. Представьте, каждый из 30 позиций (или около того) были озвучены еще раз, для уточнения информации."
+    },
+    {
+      "id": 4,
+      "reviewUserName": "Валерий",
+      "reviewDate": "15.07.2021",
+      "reviewText": "Все понравилось. Доставили быстро. Продукты нормальные. Привезли к нам вовремя. Оплачивалась покупка наличкой. Только когда все привезли. Курьеры вежливы и аккуратны. Если магазин всегда будет таким и придет на выручку, тогда и не будет никаких проблем."
+    },
+    {
+      "id": 5,
+      "reviewUserName": "Анастасия",
+      "reviewDate": "23.07.2021",
+      "reviewText": "Когда началась пандемия, пришлось воспользоваться службой доставки чтобы обезопасить себя по максимуму. Было очень интересно и странно, потому что могли привезти просрочку или типа того, но этого не случилось. Начинала я заказывать у других и была недовольна, привезли продукты в одном пакете (мясо с молоком, например) и сроки годности везде оказались разными. Но этот магазин мне посоветовала подруга и сказала, что тут лучше и безопаснее. И мне понравилось!"
+    }
+  ],
+  "promocodes": [
+    {
+      "promoText": "Специальное предложение для выпускников и обучающихся в Образовательном центре IT-Academy. Дарим скидку в 15% на все товары в корзине. Вводите промокод при оформлении заказа!",
+      "promoCode": "IT-ACADEMY"
+    },
+    {
+      "promoText": "Специальное предложение уходящего лета. В последний месяц дарим скидку в 5% на все товары в корзине. Акция проводится с 01.08.2021 по 31.08.2021. Вводите промокод при оформлении заказа!",
+      "promoCode": "LETO2021"
+    }
+  ],
+  "catalog": [
+    {
+      "goodName": "СОК SAVILLE ПРЯМОГО ОТЖИМА ГРАНАТОВЫЙ",
+      "goodCategory": "water",
+      "goodPrice": "6.49",
+      "goodWeight": "1л",
+      "goodImage": "131465.jpeg",
+      "id": "131465"
+    },
+    {
+      "goodName": "ОКОРОК МЯСН. SALUMIFICIO CORTE BUONA НАРЕЗКА С/В",
+      "goodCategory": "meat",
+      "goodPrice": "5.85",
+      "goodWeight": "80г",
+      "goodImage": "176624.jpeg",
+      "id": "176624"
+    },
+    {
+      "goodName": "ФОРЕЛЬ КУСОК ОХЛАЖД.",
+      "goodCategory": "fish",
+      "goodPrice": "27.99",
+      "goodWeight": "1кг",
+      "goodImage": "5288.jpeg",
+      "id": "5288"
+    },
+    {
+      "goodName": "КОФЕ LAVAZZA QUALITA ORO INT МОЛОТЫЙ СРЕДНЕОБЖ.",
+      "goodCategory": "bakaleya",
+      "goodPrice": "17.99",
+      "goodWeight": "250г",
+      "goodImage": "61904.jpeg",
+      "id": "61904"
+    },
+    {
+      "goodName": "КОФЕ NESCAFE GOLD РАСТВ. С ДОБ. МОЛОТОГО КОФЕ",
+      "goodCategory": "bakaleya",
+      "goodPrice": "19.99",
+      "goodWeight": "320г",
+      "goodImage": "190660.jpeg",
+      "id": "190660"
+    },
+    {
+      "goodName": "ПОЛУФАБРИКАТ МЯСНОЙ ДЛЯ ВТОРЫХ БЛЮД ИЗ СВИНИНЫ ОХЛ",
+      "goodCategory": "meat",
+      "goodPrice": "6.69",
+      "goodWeight": "1кг",
+      "goodImage": "16372.jpeg",
+      "id": "16372"
+    },
+    {
+      "goodName": "СКУМБРИЯ С/Г С/М",
+      "goodCategory": "fish",
+      "goodPrice": "7.69",
+      "goodWeight": "1кг",
+      "goodImage": "1005.jpeg",
+      "id": "1005"
+    },
+    {
+      "goodName": "ХЕК ТУШКА С/М",
+      "goodCategory": "fish",
+      "goodPrice": "5.29",
+      "goodWeight": "1кг",
+      "goodImage": "9989.jpeg",
+      "id": "9989"
+    },
+    {
+      "goodName": "КРУПА ГРЕЧНЕВАЯ КУПЕЧЕСКАЯ ЯДРИЦА",
+      "goodCategory": "bakaleya",
+      "goodPrice": "1.89",
+      "goodWeight": "800г",
+      "goodImage": "109107.jpeg",
+      "id": "109107"
+    },
+    {
+      "goodName": "ФОРЕЛЬ Б/Г ПОТР. С/М",
+      "goodCategory": "fish",
+      "goodPrice": "19.99",
+      "goodWeight": "1кг",
+      "goodImage": "6819.jpeg",
+      "id": "6819"
+    },
+    {
+      "goodName": "СИБАСС ОХЛ.",
+      "goodCategory": "fish",
+      "goodPrice": "25.99",
+      "goodWeight": "1кг",
+      "goodImage": "97732.jpeg",
+      "id": "97732"
+    },
+    {
+      "goodName": "СИБРИМ (ДОРАДО) ОХЛ. С/Г",
+      "goodCategory": "fish",
+      "goodPrice": "25.99",
+      "goodWeight": "1кг",
+      "goodImage": "141.jpeg",
+      "id": "141"
+    },
+    {
+      "goodName": "СОУС СОЕВЫЙ KIKKOMAN НАТУРАЛЬНО СВАРЕННЫЙ",
+      "goodCategory": "species",
+      "goodPrice": "13.29",
+      "goodWeight": "150мл",
+      "goodImage": "29010.jpeg",
+      "id": "29010"
+    },
+    {
+      "goodName": "ПРИПРАВА СМЕСЬ ПЕРЦЕВ ЭСТЕТИКА ВКУСА ",
+      "goodCategory": "species",
+      "goodPrice": "6.99",
+      "goodWeight": "45г",
+      "goodImage": "191684.jpeg",
+      "id": "191684"
+    },
+    {
+      "goodName": "СОК ФЕРМА ЯБЛОЧНЫЙ ПРЯМОГО ОТЖИМА",
+      "goodCategory": "water",
+      "goodPrice": "7.49",
+      "goodWeight": "3л",
+      "goodImage": "176109.jpeg",
+      "id": "176109"
+    },
+    {
+      "goodName": "ВОДА МИНЕРАЛЬНАЯ НАБЕГЛАВИ",
+      "goodCategory": "water",
+      "goodPrice": "2.69",
+      "goodWeight": "1л",
+      "goodImage": "85868.jpeg",
+      "id": "85868"
+    },
+    {
+      "goodName": "СОК ТИХВИНСКИЙ УЕЗДЪ ДЕТОКС 08 ОВОЩНОЙ МОРКОВНЫЙ",
+      "goodCategory": "water",
+      "goodPrice": "3.89",
+      "goodWeight": "1л",
+      "goodImage": "158077.jpeg",
+      "id": "158077"
+    },
+    {
+      "goodName": "СОК ТИХВИНСКИЙ УЕЗДЪ ДЕТОКС 09 МУЛЬТИОВОЩНОЙ МОРКОВНО-ТЫКВЕННЫЙ",
+      "goodCategory": "water",
+      "goodPrice": "3.89",
+      "goodWeight": "1л",
+      "goodImage": "158078.jpeg",
+      "id": "158078"
+    },
+    {
+      "goodName": "СОК ТИХВИНСКИЙ УЕЗДЪ ДЕТОКС 05 ТЫКВЕННО-АПЕЛЬСИНОВЫЙ",
+      "goodCategory": "water",
+      "goodPrice": "4.29",
+      "goodWeight": "1л",
+      "goodImage": "149520.jpeg",
+      "id": "149520"
+    },
+    {
+      "goodName": "СОК ТИХВИНСКИЙ УЕЗДЪ ДЕТОКС 01 МУЛЬТИОВОЩНОЙ",
+      "goodCategory": "water",
+      "goodPrice": "4.09",
+      "goodWeight": "1л",
+      "goodImage": "158074.jpeg",
+      "id": "158074"
+    },
+    {
+      "goodName": "ФИСТАШКИ МБС-ТОРГСЕРВИС ЖАР. СОЛ.",
+      "goodCategory": "species",
+      "goodPrice": "29.99",
+      "goodWeight": "500г",
+      "goodImage": "190439.jpeg",
+      "id": "190439"
+    },
+    {
+      "goodName": "ФИНИК MOZAFATI СУШЕНЫЙ С КОСТОЧКОЙ",
+      "goodCategory": "species",
+      "goodPrice": "5.19",
+      "goodWeight": "275г",
+      "goodImage": "159698.jpeg",
+      "id": "159698"
+    },
+    {
+      "goodName": "ПРИПРАВА ЭСТЕТИКА ВКУСА К МЯСУ",
+      "goodCategory": "species",
+      "goodPrice": "6.99",
+      "goodWeight": "43г",
+      "goodImage": "180414.jpeg",
+      "id": "180414"
+    },
+    {
+      "goodName": "ПРИПРАВА ЭСТЕТИКА ВКУСА К КУРИЦЕ",
+      "goodCategory": "species",
+      "goodPrice": "6.99",
+      "goodWeight": "52г",
+      "goodImage": "180412.jpeg",
+      "id": "180412"
+    },
+    {
+      "goodName": "ПРИПРАВА ЭСТЕТИКА ВКУСА ДЛЯ САЛАТОВ",
+      "goodCategory": "species",
+      "goodPrice": "6.99",
+      "goodWeight": "42г",
+      "goodImage": "180410.jpeg",
+      "id": "180410"
+    },
+    {
+      "goodName": "ЛАПША ГРЕЧНЕВАЯ ЧИМ-ЧИМ СОБА",
+      "goodCategory": "bakaleya",
+      "goodPrice": "3.15",
+      "goodWeight": "300г",
+      "goodImage": "85390.jpeg",
+      "id": "85390"
+    },
+    {
+      "goodName": "СОУС ПЕСТО GUSTIBUS С ТОМАТАМИ",
+      "goodCategory": "species",
+      "goodPrice": "6.89",
+      "goodWeight": "190г",
+      "goodImage": "174706.jpeg",
+      "id": "174706"
+    },
+    {
+      "goodName": "СОУС ПЕСТО GUSTIBUS С БАЗИЛИКОМ",
+      "goodCategory": "species",
+      "goodPrice": "6.89",
+      "goodWeight": "190г",
+      "goodImage": "174705.jpeg",
+      "id": "174705"
+    },
+    {
+      "goodName": "МАКАРОННЫЕ ИЗДЕЛИЯ PAONE №14 LASAGNE В/С",
+      "goodCategory": "bakaleya",
+      "goodPrice": "7.99",
+      "goodWeight": "500г",
+      "goodImage": "56248.jpeg",
+      "id": "56248"
+    },
+    {
+      "goodName": "ХЛОПЬЯ ОВСЯНЫЕ НОВОКАША ЭКСТРА №3",
+      "goodCategory": "bakaleya",
+      "goodPrice": "0.85",
+      "goodWeight": "500г",
+      "goodImage": "3768.jpeg",
+      "id": "3768"
+    },
+    {
+      "goodName": "РИС ДЛИННОЗЕРНЫЙ ALLADIN СЕЛЛА БАСМАТИ ПРОПАРЕННЫЙ",
+      "goodCategory": "bakaleya",
+      "goodPrice": "4.99",
+      "goodWeight": "1кг",
+      "goodImage": "181667.jpeg",
+      "id": "181667"
+    },
+    {
+      "goodName": "РИС СМТБ ШЛИФОВАННЫЙ 1 СОРТ",
+      "goodCategory": "bakaleya",
+      "goodPrice": "1.39",
+      "goodWeight": "700г",
+      "goodImage": "179316.jpeg",
+      "id": "179316"
+    },
+    {
+      "goodName": "КРУПА PROSTO БУЛГУР ПШЕНИЧНЫЙ",
+      "goodCategory": "bakaleya",
+      "goodPrice": "4.69",
+      "goodWeight": "500г",
+      "goodImage": "172167.jpeg",
+      "id": "172167"
+    },
+    {
+      "goodName": "ПАЛТУС ЧЕРНЫЙ ГРЕНЛАНДСКИЙ ЗОЛОТИСТЫЙ КУСОК Х/К",
+      "goodCategory": "fish",
+      "goodPrice": "54.99",
+      "goodWeight": "1кг",
+      "goodImage": "73960.jpeg",
+      "id": "73960"
+    },
+    {
+      "goodName": "КАЛЬМАР ГИГАНТСКИЙ Т/О ФИЛЕ-СОЛОМКА ТРАДИЦИОННАЯ Г/К",
+      "goodCategory": "fish",
+      "goodPrice": "24.99",
+      "goodWeight": "1кг",
+      "goodImage": "93.jpeg",
+      "id": "93"
+    },
+    {
+      "goodName": "КРЕВЕТКИ КРАСНЫЕ АРГЕНТ. VICI ПРИОРИТИ В ПАНЦИРЕ Б/Г МОРОЖ.",
+      "goodCategory": "fish",
+      "goodPrice": "44.99",
+      "goodWeight": "1кг",
+      "goodImage": "856.jpeg",
+      "id": "856"
+    },
+    {
+      "goodName": "КРЕВЕТКА КРАСНАЯ АРГЕНТИНСКАЯ С/Г В ПАНЦИРЕ",
+      "goodCategory": "fish",
+      "goodPrice": "34.79",
+      "goodWeight": "1кг",
+      "goodImage": "95590.jpeg",
+      "id": "95590"
+    },
+    {
+      "goodName": "ФИЛЕ МОРСКОГО ГРЕБЕШКА ЗАМОРОЖ.",
+      "goodCategory": "fish",
+      "goodPrice": "69.99",
+      "goodWeight": "1кг",
+      "goodImage": "14326.jpeg",
+      "id": "14326"
+    },
+    {
+      "goodName": "МЯСО МИДИЙ В/МОРОЖ",
+      "goodCategory": "fish",
+      "goodPrice": "17.99",
+      "goodWeight": "1кг",
+      "goodImage": "29478.jpeg",
+      "id": "29478"
+    },
+    {
+      "goodName": "ВОДА МИНЕРАЛЬН. БОРЖОМИ",
+      "goodCategory": "water",
+      "goodPrice": "2.49",
+      "goodWeight": "500мл",
+      "goodImage": "65047.jpeg",
+      "id": "65047"
+    },
+    {
+      "goodName": "ЩЕКОВИНА ДОМАШНЯЯ К/В БРЕСТСКИЙ МК",
+      "goodCategory": "meat",
+      "goodPrice": "10.09",
+      "goodWeight": "1кг",
+      "goodImage": "95455.jpeg",
+      "id": "95455"
+    },
+    {
+      "goodName": "ПРОДУКТ ИЗ СВИНИНЫ БАЛЫЧОК СЛОНИМСКИЙ К/В СЛОНИМСКИЙ МК",
+      "goodCategory": "meat",
+      "goodPrice": "21.09",
+      "goodWeight": "1кг",
+      "goodImage": "89521.jpeg",
+      "id": "89521"
+    }
+  ],
+  "specials": [
+    {
+      "specialName": "ОКОРОК МЯСН. SALUMIFICIO CORTE BUONA НАРЕЗКА С/В",
+      "specialOldPrice": "9.65",
+      "specialNewPrice": "5.85",
+      "specialWeight": "80г",
+      "specialImage": "176624.jpeg",
+      "id": "176624"
+    },
+    {
+      "specialName": "ФОРЕЛЬ КУСОК ОХЛАЖД.",
+      "specialOldPrice": "36.99",
+      "specialNewPrice": "27.99",
+      "specialWeight": "1кг",
+      "specialImage": "5288.jpeg",
+      "id": "5288"
+    },
+    {
+      "specialName": "КОФЕ LAVAZZA QUALITA ORO INT МОЛОТЫЙ СРЕДНЕОБЖ.",
+      "specialOldPrice": "26.99",
+      "specialNewPrice": "17.99",
+      "specialWeight": "250г",
+      "specialImage": "61904.jpeg",
+      "id": "61904"
+    },
+    {
+      "specialName": "КОФЕ NESCAFE GOLD РАСТВ. С ДОБ. МОЛОТОГО КОФЕ",
+      "specialOldPrice": "28.99",
+      "specialNewPrice": "19.99",
+      "specialWeight": "320г",
+      "specialImage": "190660.jpeg",
+      "id": "190660"
+    },
+    {
+      "specialName": "СОК SAVILLE ПРЯМОГО ОТЖИМА ГРАНАТОВЫЙ",
+      "specialOldPrice": "9.85",
+      "specialNewPrice": "6.49",
+      "specialWeight": "1л",
+      "specialImage": "131465.jpeg",
+      "id": "131465"
+    }
+  ],
+  "orders": [
+    {
+      "orderNumber": "Test0",
+      "orderGoods": "Test0",
+      "orderTotalPrice": "Test0",
+      "orderName": "Test0",
+      "orderPhone": "Test0",
+      "orderEmail": "Test0",
+      "orderDeliveryType": "Test0",
+      "id": 0
+    },
+    {
+      "orderNumber": "Test1",
+      "orderGoods": "Test1",
+      "orderTotalPrice": "Test1",
+      "orderName": "Test1",
+      "orderPhone": "Test1",
+      "orderEmail": "Test1",
+      "orderDeliveryType": "Test1",
+      "id": 1
+    }
+  ],
+  "optovikCallback": [
+    {
+      "id": 0,
+      "optName": "Test0",
+      "optPhone": "Test0",
+      "optDate": "Test0",
+      "optText": "Test0"
+    },
+    {
+      "id": 1,
+      "optName": "Test1",
+      "optPhone": "Test1",
+      "optDate": "Test1",
+      "optText": "Test1"
+    }
+  ]
+}

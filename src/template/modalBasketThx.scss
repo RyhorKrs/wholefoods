@@ -1,0 +1,61 @@
+// Обнуление
+@import "normal.scss";
+
+//Переменные
+$color_5: #fff;
+$color_6: #21444e;
+
+//Шаблоны
+%h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.modal__basket_thanks {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal_basket_thanks__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .basket_thanks__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color_5;
+            width: 300px;
+            height: 350px;
+            border-radius: 5px;
+            padding: 20px;
+
+            .basket_thanks__text {
+                text-align: center;
+
+                h2 {
+                    @extend %h2;
+                    color: $color_6;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
